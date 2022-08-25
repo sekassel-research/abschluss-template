@@ -4,10 +4,12 @@
 \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 \markboth{Abkürzungsverzeichnis}{Abkürzungsverzeichnis}
 
+% Auf diese Weise kann der Plural von unbekannten Wörtern definiert werden (für \acp{..})
 \acrodefplural{ha}[HAs]{Hausaufgaben}
 \acrodefplural{rq}[RQs]{Forschungsfragen}
 
-\begin{acronym}[XXXXXX]
+\begin{acronym}[XXXXXX] % Anzahl der X gibt an, welche Breite das längste Acronym hat
+    % Es werden nur Akronyme übernommen, die auch verwendet werden
     \acro{api}[API]{Application Programming Interface}
     \acro{css}[CSS]{Cascading Style Sheet}
     \acro{gui}[GUI]{Graphical User Interface}
