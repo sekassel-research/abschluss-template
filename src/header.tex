@@ -59,23 +59,11 @@
 % Minted
 \usepackage[chapter]{minted}
 %\usemintedstyle{xcode}
-\setminted{frame=single,tabsize=2,linenos}
+\setminted{frame=single,tabsize=2,linenos,autogobble}
 
 \newmintinline[code]{text}{breaklines}
-\newmintinline[mdcode]{md}{breaklines}
-\newmintinline[jcode]{java}{breaklines}
 
-\newminted[codeblock]{text}{autogobble,frame=none,linenos=false,breaklines}
 \newminted[mdcodeblock]{md}{autogobble,frame=none,linenos=false,breaklines}
-\newminted[jcodeblock]{java}{autogobble,frame=none,linenos=false}
-
-\newcommand{\codelisting}[4]{%
-    \begin{listing}[htp]
-        \inputminted{#1}{#2/#3}
-        \caption{#4}
-        \label{lst:#3}
-    \end{listing}%
-}
 
 % list of abbreviations
 \usepackage[printonlyused]{acronym}
